@@ -41,8 +41,8 @@ def main():
 	"""
 	parser=argparse.ArgumentParser(description="Take a selection of chains from a set of structures and save them as new structures.")
 	parser.add_argument('structure', nargs='+', help='Any format supported by Pymol.')
-	parser.add_argument('-c', '--chains', default='A', help='Chain string containing all the chains to be get, no space between chain IDs. Only single letter chain IDs are supported  [default: %(default)s].')
-	parser.add_argument('--hetatm', action='store_true', default=False, help="Include hetatm in the output files [default: %(default)].")
+	parser.add_argument('-c', '--chains', default='A', help='Chain string containing all the chains to be get, no space between chain IDs. Only single letter chain IDs are supported [default: %(default)s].')
+	parser.add_argument('--hetatm', action='store_true', default=False, help="Include hetatm in the output files [default: %(default)s].")
 	parser.add_argument('-v', '--version', action='version', version='1.0', help="Show program's version number and exit.")
 
 	args=parser.parse_args()
